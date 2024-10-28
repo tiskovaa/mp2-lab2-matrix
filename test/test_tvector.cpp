@@ -147,7 +147,7 @@ TEST(TDynamicVector, can_multiply_scalar_by_vector)
 		v1[i] = 1;
 	v1 = v1 * 3;
 	for (int i = 0; i < 5; i++)
-		v2[i] = 4;
+		v2[i] = 3;
 	EXPECT_EQ(v1, v2);
 }
 
@@ -179,7 +179,7 @@ TEST(TDynamicVector, can_subtract_vectors_with_equal_size)
 	for (int i = 0; i < 5; i++) {
 		v2[i] = 3;
 		v1[i] = 1;
-		res[i] = 4;
+		res[i] = -2;
 	}
 	EXPECT_EQ(v1 - v2, res);
 }
