@@ -222,7 +222,7 @@ public:
     TDynamicMatrix operator*(const T& val)
     {
         TDynamicMatrix res(sz);
-        for (int i = 0; i < z; i++)
+        for (int i = 0; i < sz; i++)
             res[i] = pMem[i] * val;
         return res;
     }
