@@ -230,7 +230,7 @@ public:
     // матрично-векторные операции
     TDynamicVector<T> operator*(const TDynamicVector<T>& v)
     {
-        if (sz != v.sz) throw logic_error("different lengths");
+        if (sz != v.size()) throw logic_error("different lengths");
         TDynamicVector <T> res(sz);
         for (int i = 0; i < sz; i++)
             res[i] = pMem[i] * v;
