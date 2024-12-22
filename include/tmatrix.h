@@ -9,6 +9,7 @@
 
 #include <iostream>
 #include <assert.h>
+#include <cassert>
 using namespace std;
 
 const int MAX_VECTOR_SIZE = 100000000;
